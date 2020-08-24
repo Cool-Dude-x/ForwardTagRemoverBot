@@ -1,4 +1,4 @@
-/*  Copyright (C) 2020 by Anandpskerala@Github, < https://github.com/Anandpskerala >.
+*  Copyright (C) 2020 by Anandpskerala@Github, < https://github.com/Anandpskerala >.
  *
  * This file is part of < https://github.com/Anandpskerala/ForwardTagRemoverBot > project,
  * and is released under the "GNU v3.0 License Agreement".
@@ -24,7 +24,7 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 		Text: "Source code",
 		Url:  "https://github.com/Anandpskerala/ForwardTagRemoverBot",
 	}
-
+u
 	helpButton[0][1] = ext.InlineKeyboardButton{
 		Text: "My Creater",
 		Url:  "https://telegram.dog/Anandpskerala",
@@ -33,7 +33,7 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 	helpButton[1][0] = ext.InlineKeyboardButton{
 		Text: "How to create a bot like me?",
 		Url:  "https://www.youtube.com/watch?v=swg6un2N4Fk&feature=youtu.be",
-	}
+	
 
 	markup := ext.InlineKeyboardMarkup{InlineKeyboard: &helpButton}
 
@@ -46,4 +46,4 @@ func Help(b ext.Bot, u *gotgbot.Update) error {
 		b.Logger.Warnw("Error in sending", zap.Error(err))
 	}
 	return err
-}
+
